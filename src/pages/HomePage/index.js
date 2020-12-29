@@ -5,11 +5,14 @@ import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import ProgressBar from '../../components/ProgressBar/index'
 import './styles.scss';
+import Skills from '../../components/Skills/index'
 
 import portuguese from '../../assets/portuguese.svg'
 import english from '../../assets/english.svg'
 import german from '../../assets/german.svg'
 import italian from '../../assets/italian.svg'
+import react from '../../assets/react.svg'
+import teamwork from '../../assets/teamwork.svg'
 
 
 export default function App() {
@@ -159,7 +162,7 @@ function Hero({ children }) {
 function Image({ ratio, src }) {
   return (
     <div className="image-container">
-      <div className="image-inner-container">
+      {/* <div className="image-inner-container"> */}
         <div
           className="ratio"
           style={{
@@ -169,7 +172,7 @@ function Image({ ratio, src }) {
           <div className="ratio-inner">
             <img src={src} />
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
@@ -185,17 +188,16 @@ function Info() {
 
 const cards = [
   {
-    title: 'Build faster ⚡️',
+    title: 'Trajectory',
     description:
       'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
     image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
     imageRatio: 784 / 1016
   },
   {
-    title: 'Tweak anything 👩‍🎨',
-    description:
-      'Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
+    title: 'Skills ⚡️',
+    description: <Skills />,
+    image: teamwork,
     imageRatio: 839 / 1133
   },
   {
@@ -203,11 +205,11 @@ const cards = [
     languages: "true",
   },
   {
-    title: 'Export your code 🚀',
+    title: 'Programming languages',
     description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-    imageRatio: 730 / 1030
+      "Since 2018 I've been working with software development, from infrastructure to frontend. After experiencing many areas, frontend is one of the most funny things to do into this world. Now, I work directly with React and I'm always trying to learn something new!",
+    image: react,
+    imageRatio: 0.20
   }
 ];
 

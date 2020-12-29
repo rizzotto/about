@@ -1,0 +1,16 @@
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#6C63FF, 0.15);
+    color: #374047;
+    font-size: 16px;
+    border-radius: 12px;
+    height: 35px;
+}
+
+.skills{
+    div {
+        margin-bottom: 12px;
+    }
+}
