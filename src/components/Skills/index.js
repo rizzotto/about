@@ -12,7 +12,7 @@ export default function Skills() {
         <Skill name="Team Work"/>
         <Skill name="Agile Methodology" />
         <Skill name="API's" />
-        <Skill name="WEB Development"/>
+        <Skill name="Web Development"/>
         <Skill name="Creative Thinking" />
         <Skill name="Communication" />
         <Skill name="Listening Skills" />

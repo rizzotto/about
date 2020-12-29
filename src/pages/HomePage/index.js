@@ -6,6 +6,7 @@ import particlesConfig from './particles-config.js';
 import ProgressBar from '../../components/ProgressBar/index'
 import './styles.scss';
 import Skills from '../../components/Skills/index'
+import Trajectory from '../../components/Trajectory/index'
 
 import portuguese from '../../assets/portuguese.svg'
 import english from '../../assets/english.svg'
@@ -13,7 +14,8 @@ import german from '../../assets/german.svg'
 import italian from '../../assets/italian.svg'
 import react from '../../assets/react.svg'
 import teamwork from '../../assets/teamwork.svg'
-
+import coding from '../../assets/coding.svg'
+import world from '../../assets/world.svg'
 
 export default function App() {
 
@@ -189,10 +191,9 @@ function Info() {
 const cards = [
   {
     title: 'Trajectory',
-    description:
-      'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
-    imageRatio: 784 / 1016
+    description: <Trajectory />,
+    image: coding,
+    imageRatio: 839 / 1016
   },
   {
     title: 'Skills ⚡️',
@@ -203,6 +204,8 @@ const cards = [
   {
     title: 'Languages',
     languages: "true",
+    image: world,
+    imageRatio: 784 / 1016
   },
   {
     title: 'Programming languages',
