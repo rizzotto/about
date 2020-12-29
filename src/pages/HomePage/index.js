@@ -23,6 +23,13 @@ export default function App() {
           <div className="container">
             <Info />
             <div className="row">
+              <div className="introduction">
+                <Card>
+                  <div className="card-title">{card.title}</div>
+                  <div className="card-body">{card.description}</div>
+                  <Image ratio={card.imageRatio} src={card.image} />
+                </Card>
+              </div>
               {cards.map((card, i) => (
                 <div key={i} className="column">
                   <Card>
@@ -177,7 +184,7 @@ const cards = [
     imageRatio: 839 / 1016
   },
   {
-    title: 'Skills ⚡️',
+    title: 'Skills',
     description: <Skills />,
     image: teamwork,
     imageRatio: 839 / 1133
@@ -188,14 +195,15 @@ const cards = [
     image: world,
     imageRatio: 784 / 1016
   },
-  {
-    title: 'Programming languages',
-    description:
-      "Since 2018 I've been working with software development, from infrastructure to frontend. After experiencing many areas, frontend is one of the most funny things to do into this world. Now, I work directly with React and I'm always trying to learn something new!",
-    image: react,
-    imageRatio: 0.20
-  }
 ];
+
+let card =   {
+  title: 'Introduction',
+  description:
+    "Since 2018 I've been working with software development, from infrastructure to frontend. After experiencing many areas, frontend is one of the most funny things to do into this world. Now, I work directly with React and I'm always trying to learn something new!",
+  image: react,
+  imageRatio: 0.20
+}
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
