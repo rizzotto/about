@@ -11,3 +11,4 @@ Developed with React, using
 - [react-use-gesture](https://github.com/pmndrs/react-use-gesture)
 
 Based on https://codesandbox.io/s/6jlvz1j5q3?file=/src/index.js
+
