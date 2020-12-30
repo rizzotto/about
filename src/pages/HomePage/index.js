@@ -12,6 +12,9 @@ import react from '../../assets/react.svg'
 import teamwork from '../../assets/teamwork.svg'
 import coding from '../../assets/coding.svg'
 import world from '../../assets/world.svg'
+import github from '../../assets/github.svg'
+import linkedin from '../../assets/linkedin.svg'
+import gmail from '../../assets/gmail.svg'
 
 export default function App() {
 
@@ -23,7 +26,7 @@ export default function App() {
           <div className="container">
             <Info />
             <div className="row">
-              <div className="introduction">
+              <div className="oneRow">
                 <Card>
                   <div className="card-title">{card.title}</div>
                   <div className="card-body">{card.description}</div>
@@ -44,6 +47,23 @@ export default function App() {
                   </Card>
                 </div>
               ))}
+              <div className="oneRow">
+                <Card>
+                  {/* <div className="card-title">{card.title}</div> */}
+                  <div className="contact">
+                    <a href="https://github.com/rizzotto" target="_blank" className="button">
+                      <img src={github} height={60} width={60}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guilherme-rizzotto/" target="_blank" className="button">
+                      <img src={linkedin} height={60} width={60}/>
+                    </a>
+                    <a href="mailto:guilherme.rizzotto@acad.pucrs.br" target="_blank" className="button">
+                      <img src={gmail} height={60} width={60}/>
+                    </a>
+                  </div>
+                  {/* <Image ratio={card.imageRatio} src={card.image} /> */}
+                </Card>
+              </div>
             </div>
           </div>
         </Hero>

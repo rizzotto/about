@@ -88,10 +88,11 @@ body {
   flex-wrap: wrap;
 }
 
-.introduction {
+.oneRow {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .column {
@@ -188,3 +189,10 @@ body {
     margin-right: 15px;
   }
 }
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
