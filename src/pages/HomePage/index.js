@@ -220,7 +220,7 @@ const cards = [
 let card =   {
   title: 'Introduction',
   description:
-    "Since 2018 I've been working with software development, from infrastructure to frontend. After experiencing many areas, frontend is one of the most funny things to do into this world. Now, I work directly with React and I'm always trying to learn something new!",
+    "Since 2018 I've been working with software development, from infrastructure to frontend. After experiencing many areas, frontend is one of the most exciting things to do into this world. Now, I work directly with React and I'm always trying to learn something new!",
   image: react,
   imageRatio: 0.20
 }
